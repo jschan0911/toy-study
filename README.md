@@ -4,8 +4,9 @@
 ---
 0. 홈 화면 (first.html)
 > 로그인 안 되어 있을 땐 로그인, 회원가입 버튼 노출</br>
-1. 회원가입 + 로그인 + 로그아웃 (signin.html, login.html)
-> 로그인시 username, password, age 입력 받고 테이블에 저장함
+1. 회원가입 + 로그인 + 로그아웃 (signup.html, again_signup.html, login.html)
+> 로그인시 username, password, age 입력 받고 테이블에 저장함</br>
+> 회원가입시 비밀번호와 비밀번호 확인란이 일치하지 않을 시, again_signup.html 노출
 2. 시험 (test.html)
 > 로그인 하자마자 테스트를 보고 부족한 유형 평가</br>
 > 부족한 부분 있으면 해당 부분에 대한 정보를 myUser 클래스 내 grade 인자에 대입 ('곱셈, 덧셈, ...')
