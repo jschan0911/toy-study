@@ -4,12 +4,12 @@
 안녕하세요,{{user.username}}님!  <!--로그인 됐으면 이 문자를 띄어주고-->
 <a href="{% url 'logout' %}">로그아웃</a>
 <br/>
-{% if plus == 0 and mult == 0 and minus == 0 and div == 0 %}
-축하드립니다. 현재 수준의 문제는 모두 푸실 수 있습니다!
-<a href="{% url 'test' %}">연습문제</a>
-{% else %}
-현재 부족한 유형은 {{user.grade}} 입니다
-{% endif %}
+    {% if plus == 0 and mult == 0 and minus == 0 and div == 0 %}
+    축하드립니다. 현재 수준의 문제는 모두 푸실 수 있습니다!
+    <a href="{% url 'test' %}">연습문제</a>
+    {% else %}
+    현재 부족한 유형은 {{user.grade}} 입니다
+    {% endif %}
 
 {% else%}
 아직 로그인이 되지 않았어요..<br/>
@@ -50,3 +50,8 @@
 <a href="{% url 'div_test' %}">재시험보기</a>
 <hr>
 {% endif %}
+
+plus = {{plus}}
+mult = {{mult}}
+minus = {{minus}}
+div = {{div}}

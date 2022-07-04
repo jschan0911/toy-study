@@ -9,7 +9,7 @@ def first(request):
     div = 0
 
     # If user is logged in
-    if request.user.id == True:
+    if request.user.id != None:
         user = get_object_or_404(myUser, pk = request.user.id)
         if str(user.grade).find('덧셈') != -1:
             plus = 1
@@ -20,5 +20,8 @@ def first(request):
         if str(user.grade).find('나눗셈') != -1:
             div = 1
 
+        return render(request, 'first.html', {"plus" : plus, "mult" : mult, "minus" : minus, "div" : div})
+
+    
     return render(request, 'first.html', {"plus" : plus, "mult" : mult, "minus" : minus, "div" : div})
 # Create your views here.
