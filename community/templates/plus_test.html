@@ -1,0 +1,32 @@
+<form action="{% url 'plus_test' %}" method = "POST">
+    {% csrf_token %}
+    1 + 1<br>
+    <input type='radio' name='plus' value='Y' />2
+    <input type='radio' name='plus' value='N' />3
+    <input type='radio' name='plus' value='N' />1
+    <input type='radio' name='plus' value='N' />6
+    <input type='radio' name='plus' value='N' />5
+    <br>
+    6 + 2<br>
+    <input type='radio' name='mult' value='Y'/>8
+    <input type='radio' name='mult' value='N' />12
+    <input type='radio' name='mult' value='N' />9
+    <input type='radio' name='mult' value='N' />11
+    <input type='radio' name='mult' value='N' />7
+    <br>
+    2 + 1<br>
+    <input type='radio' name='minus' value='Y' />3
+    <input type='radio' name='minus' value='N' />8
+    <input type='radio' name='minus' value='N' />5
+    <input type='radio' name='minus' value='N' />7
+    <input type='radio' name='minus' value='N' />9
+    <br>
+    0 + 3<br>
+    <input type='radio' name='div' value='Y'/>3
+    <input type='radio' name='div' value='N' />7
+    <input type='radio' name='div' value='N' />6
+    <input type='radio' name='div' value='N' />4
+    <input type='radio' name='div' value='N' />5
+    <br>
+    <input type='submit'>
+  </form>
