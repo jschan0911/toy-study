@@ -91,6 +91,7 @@ def test(request):
             user.save()
             point -= 25
         
+     
         return render(request, 'result.html', {'grade':user.grade, 'point' : point})
 
     return render(request, 'test.html')
